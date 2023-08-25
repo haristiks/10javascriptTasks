@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const numbers1 = ["bridge","bridgeon", "on"];
+        // const numbers2 = numbers1.map(myFunction);
+        
+        // document.write(numbers2);
+        
+        // function myFunction(value, index, array) {
+        //   if(value=="bridgeon"){
+        //     return (Boolean(0));
+        //   }else{
+        //     return (Boolean(1));
+        //   }
+        // }
+        function bridgeonSwitch(array){
+            const result=[];
+            let toggle="true";
+            for(let x of array){
+                if(x=="bridgeon"){
+                    toggle=!toggle;
+                }
+                result.push(toggle);
+            }
+            return result;
+        }
+        const arr=["bridgeon", 10101, 3.14, 53, "bridgeon"];
+        document.write(bridgeonSwitch(arr));
+    </script>
+</body>
+</html>

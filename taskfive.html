@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function arrayOfMultiples(num,ln){
+        const result=[];
+        for(let i=0; i<ln; i++){
+            result.push(num*(i+1))
+        }
+        return result;
+        }
+        let num=prompt("enter a number")*1;
+        let ln=prompt('enter the length')*1;
+        document.write("arrayOfMultiples = "+arrayOfMultiples(num,ln));
+    </script>
+</body>
+</html>

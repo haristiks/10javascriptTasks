@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findLargest(array){
+            result=[];
+            array.forEach(value => {
+                return result.push(Math.max.apply(null,value));
+            });
+            return result;
+        }
+        const arr=[[-34, -54, -74], [-32, -2, -65], [-54, 7, -43]];
+        document.write(findLargest(arr));
+    </script>
+</body>
+</html>

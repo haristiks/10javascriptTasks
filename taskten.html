@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function totalPrice(array){
+            const temp=[];
+            array.forEach(value => {
+              return temp.push(value.quantity*value.price) 
+            });
+        
+            const finalPrice=temp.reduce(total)
+            function total(total, value, index, array){
+                return total + value;
+            }
+            return finalPrice;
+            }
+            
+        
+        const arr=[{ product: "Milk", quantity: 1, price: 10 },
+{ product: "Eggs", quantity: 12, price: 5 },
+{ product: "Bread", quantity: 2, price: 20 },
+{ product: "Cheese", quantity: 1, price: 30 }
+];
+document.write(totalPrice(arr));
+
+    </script>
+</body>
+</html>

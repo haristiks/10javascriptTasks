@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function out(obj){
+            result=[];
+            for(let x in obj){
+                result.push(obj[x])
+            }
+            return result.join(" ");
+        }
+        const obj={ 1: "I", 2: "am", 3: "innocent" }
+        document.write(out(obj));
+    </script>
+</body>
+</html>
